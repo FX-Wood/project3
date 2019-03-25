@@ -21,6 +21,9 @@ import UserDirectory from './UserDirectory';
 // SET-UP PAGE
 import SetUpPage from './SetUpPage';
 
+// Test
+import ReactVisBarChart from './ReactVisBarChart';
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -123,6 +126,7 @@ class App extends Component {
         <div className="profile-box">  
           <UserProfile user={ user } logout={ this.logout }/>
           <MyProps user={ user } />
+          <ReactVisBarChart />
           <UserDirectory user={ user } />
           <p><button onClick={ this.handleClick } >Test the protected route...</button></p>
           <p>{ this.state.lockedResult }</p>
