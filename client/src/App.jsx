@@ -21,6 +21,9 @@ import UserDirectory from './UserDirectory';
 // SET-UP PAGE
 import SetUpPage from './SetUpPage';
 
+// TEST
+import D3BarChart from './D3BarChart';
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -121,6 +124,7 @@ class App extends Component {
       content = (
       <>    
         <div className="profile-box">  
+          <D3BarChart />
           <UserProfile user={ user } logout={ this.logout }/>
           <MyProps user={ user } />
           <UserDirectory user={ user } />
