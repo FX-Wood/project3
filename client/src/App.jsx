@@ -21,6 +21,9 @@ import UserDirectory from './UserDirectory';
 // SET-UP PAGE
 import SetUpPage from './SetUpPage';
 
+// Test
+import RechartsBarChart from './RechartsBarChart';
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -121,6 +124,7 @@ class App extends Component {
       content = (
       <>    
         <div className="profile-box">  
+          <RechartsBarChart />
           <UserProfile user={ user } logout={ this.logout }/>
           <MyProps user={ user } />
           <UserDirectory user={ user } />
